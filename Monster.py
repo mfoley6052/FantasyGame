@@ -1,5 +1,5 @@
 #Mitchell Foley
-
+from random import *
 class monster():
 
     def __init__(self,health,armour,mana):
@@ -8,8 +8,7 @@ class monster():
         self.mana = mana
 
     def damage(self,chance,crit,dmg):
-        doesCrit = False
-        #determine if actually crits
+        doesCrit = bool(random() <= chance)
         if doesCrit:
             self.HP -= crit*dmg-self.armour
         else:

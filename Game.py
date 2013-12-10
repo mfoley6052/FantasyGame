@@ -40,6 +40,6 @@ def update():
 
 #Game Sequence
 startUp()
-while running:
-    update()
-cleanUp()
+#while running:
+#    update()
+#cleanUp()
